@@ -1,0 +1,18 @@
+.huge{
+  font-size: 30px;
+}
+.yellow{
+  background-color: yellow;
+}
+
+.green{
+  background-color: green;
+  color: white;
+}
+
+p#p1{
+  background-color: red;
+  color: white;
+  margin: 10px;
+  border: 10px blue;
+}
