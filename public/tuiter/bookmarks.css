@@ -1,0 +1,124 @@
+.wd-grayish {
+  color: rgb(110,118,125);
+}
+
+p.wd-header {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+i.wd-ellipsis-big-blue{
+  color: rgb(29,161,242);
+  font-size: 150%;
+  position: relative;
+  top: 8px;
+}
+
+img.wd-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+.wd-handle {
+  color: rgb(110, 118, 125);
+  font-size: 15px;
+}
+div.wd-content-container-avatar {
+  border: 1px solid rgb(110,118,125);
+}
+
+p.wd-name-header {
+  color: white;
+  font-size: 15px;
+  margin-left: 16px;
+}
+
+p.wd-margin-lr {
+  margin-left: 60px;
+  margin-right: 16px;
+
+}
+
+p.wd-content-main-large {
+  color: white;
+  font-size: 15px;
+  max-width: 506px;
+}
+
+img.wd-image-tuit {
+  width: 504px;
+  height: 264px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 12px;
+  margin-left: 72px;
+  margin-right: 12px;
+  border: solid 1px rgb(110,118,125);
+}
+
+.wd-red {
+  color: rgb(255,105,97);
+}
+
+div.wd-tuit-text-box {
+  border: solid 1px rgb(110,118,125);
+  width: 504px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: 72px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  position: relative;
+  bottom: 5px;
+}
+
+p.wd-tuit-title {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+p.wd-tuit-content {
+  color: rgb(110,118,125);
+  font-size: 15px;
+}
+
+.wd-grid-4 {
+  width:25%;
+}
+
+.wd-tuit-command {
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  border: none;
+
+}
+
+div.wd-icon-line {
+  margin-left: 66px;
+  margin-bottom: 12px;
+  width: 504px;
+  justify-content: space-between;
+  display: flex;
+}
+
+span.wd-icon-line-nums {
+  color: rgb(110,118,125);
+  font-size: 12px;
+  margin-left: 12px;
+}
+
+.wd-icon-selected {
+  color: rgb(255,105,97);
+  font-size: 12px;
+  margin-left: 12px;
+}
+
+a.wd-remove-underline {
+  text-decoration: none;
+}
