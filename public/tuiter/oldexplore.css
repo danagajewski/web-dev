@@ -1,0 +1,175 @@
+body {
+  background-color: black;
+  font-family: Helvetica, "Helvetica Neue", serif;
+}
+p {
+  padding-left: 16px;
+  margin: 0.5em;
+}
+.wd-padded {
+  padding-left: 16px;
+}
+.wd-dark-gray {
+  color: rgb(105,105,105);
+}
+.wd-input-field {
+  background-color: rgb(60,60,60);
+  border:0;
+  border-radius: 50px;
+  width: 85%;
+  line-height: 2em;
+}
+.wd-input-field::placeholder {
+  color: rgb(140,140,140);
+}
+a.wd-blue-link {
+  color: rgb(29,161,242);
+  text-decoration: none;
+  flex-basis: 0;
+  position: relative;
+  top: 5px;
+}
+
+.wd-icon-resize {
+  font-size: 200%;
+}
+
+.wd-pos-relative-nudge-down {
+  position: relative;
+  top: 7px;
+}
+.wd-padded-12 {
+  padding-left: 12px;
+}
+.wd-padded-12-r {
+  padding-left: 12px;
+}
+.wd-padded-link:hover {
+  color: rgb(29,161,242);
+  background-color: black;
+  font-size: 15px;
+  border-color: rgb(29,161,242);
+  border-bottom: solid;
+  padding: 16px;
+
+}
+
+.wd-padded-link:active {
+  color: rgb(29,161,242);
+  background-color: black;
+  font-size: 15px;
+  border-color: rgb(29,161,242);
+  border-bottom: solid;
+  padding: 16px;
+}
+
+.wd-padded-link {
+  padding: 16px;
+  font-size: 15px;
+  color: rgb(110,118,125);
+  background-color: black;
+  border: none;
+}
+
+.wd-padded-link-end:hover {
+  color: rgb(29,161,242);
+  background-color: black;
+  font-size: 15px;
+  border-color: rgb(29,161,242);
+  border-bottom: solid;
+  padding: 16px 0 16px 16px;
+
+}
+
+.wd-padded-link-end:active {
+  color: rgb(29,161,242);
+  background-color: black;
+  font-size: 15px;
+  border-color: rgb(29,161,242);
+  border-bottom: solid;
+  padding: 16px 0 16px 16px;
+}
+
+.wd-padded-link-end {
+  padding: 16px 0 16px 16px;
+  font-size: 15px;
+  color: rgb(110,118,125);
+  background-color: black;
+  border: none;
+}
+
+.wd-grid-6 {
+  float: left;
+  width:16%;
+}
+.wd-float-bottom {
+  float: bottom;
+
+}
+hr.wd-line {
+  background-color: rgb(110,118,125);
+  width: 100%; /*Not sure why but without this the line goes crazy*/
+}
+
+.wd-content-ends {
+  color: rgb(110, 118, 125);
+  font-size: 13px;
+}
+
+p.wd-content-header-author {
+  color: white;
+  font-size: 13px;
+}
+p.wd-content-main {
+  color: white;
+  font-size: 15px;
+}
+div.wd-content-container {
+  border: 1px solid rgb(110,118,125); /*this color is equivalent to light gray, IMO closer to the original*/
+}
+
+div.wd-content-container-image {
+  border: 1px solid rgb(110,118,125);
+  height: 124px;
+}
+
+div.wd-nudge-up {
+  position: relative;
+  bottom: 1px;
+}
+
+.wd-float-left {
+  float: left;
+}
+
+
+.wd-icon-resize-bigger {
+  font-size: 150%;
+}
+
+.wd-float-right {
+  float: right;
+  height: 100%;
+  margin-right: 16px;
+}
+
+img.wd-square-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin-top: 12px;
+  margin-left: 16px;
+}
+
+.wd-grid-row {
+  clear: both;
+}
+
+.wd-grid-col-6 {
+  width: 16%;
+  float: left;
+}
+
+.red #this_is {
+
+}
