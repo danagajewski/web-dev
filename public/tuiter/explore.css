@@ -108,3 +108,7 @@ span.wd-stack-sizing {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+i.wd-search-mag {
+    color: rgb(150, 150, 150);
+}

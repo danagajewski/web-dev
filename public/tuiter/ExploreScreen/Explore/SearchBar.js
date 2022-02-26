@@ -5,7 +5,7 @@ const SearchBar = () => {
           <div class="col-sm-11">
             <div class="input-group mb-3">
           <span class="input-group-text border-right-0 search-start-override"><i
-              class="fa fa-lg fa-search"></i></span>
+              class="fa fa-lg fa-search wd-search-mag"></i></span>
               <input type="text" class="form-control rounded-override border-left-0"
                      placeholder="Search Twitter">
             </div>
