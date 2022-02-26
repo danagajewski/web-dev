@@ -92,3 +92,19 @@ span.wd-stack-sizing {
     height:44px;
     width:36px;
 }
+
+.wd-top {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-color: rgb(80, 80, 80);
+}
+
+.wd-middle {
+    border-radius: 0;
+    border-bottom-color: rgb(80, 80, 80);
+}
+
+.wd-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
