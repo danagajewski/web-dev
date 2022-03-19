@@ -29,7 +29,7 @@ const Tweet = ({
               </div>
               <div className="col-3"><img
                   src={`${tweet.image}`}
-                  className="wd-square-image wd-float-right"/>
+                  className="wd-square-image wd-float-right" alt={""}/>
               </div>
             </div>
           </div>

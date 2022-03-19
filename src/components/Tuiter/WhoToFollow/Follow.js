@@ -14,7 +14,7 @@ const Follow = ({
                 <div className="col-2 p-0 m-0">
                   <img
                       src={`${follow.image}`}
-                      className="wd-round-image"/>
+                      className="wd-round-image" alt={""}/>
                 </div>
                 <div className="col-7">
                   <p className="wd-content">{follow.name} <i className="fa-solid fa-check-circle"/></p>

@@ -9,7 +9,7 @@ const NavBarTab = ({
   let active = tab.active ? "nav-link active" : "nav-link";
   return(
   <li className="nav-item">
-    <a className= {`${active}`} href="#"> {tab.content} </a>
+    <a className= {`${active}`} href="/"> {tab.content} </a>
   </li>
   
   );
