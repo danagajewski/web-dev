@@ -259,6 +259,8 @@ const init = () => {
   hideBtn.click(hideHandler);
   showBtn.click(showHandler);
 
+  $("h1").append("!")
+
 
 
 

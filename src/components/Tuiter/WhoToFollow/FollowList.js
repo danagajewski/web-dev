@@ -1,0 +1,16 @@
+import follows from "./Follows.json";
+import Follow from "./Follow.js";
+import React from "react";
+
+const FollowList = () => {
+  return (
+    <>
+      {follows.map(follow => {
+          return(
+              <Follow follow={follow}/>
+          );
+        })}
+    </>);
+}
+
+export default FollowList;

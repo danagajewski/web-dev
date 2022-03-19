@@ -1,11 +1,20 @@
 const TodoItem = (todo) => {
+  const ewq = [28,107,26,65,95]
   return (`
-<li>
-<input type="checkbox"
-${todo.done ? 'checked' : ''}/>
-${todo.title}
-(${todo.status})
-</li>
+<ul>
+${
+      ewq.filter(
+          function(dsa){
+            return dsa < 50
+          })
+      .map(
+          function(rew) {
+            return(
+                <li>{rew}</li>
+            )
+          })
+  }
+</ul>
 
     `);
 }

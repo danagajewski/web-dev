@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Index</title>
   <link rel="stylesheet" href="index.css"/>
+
 </head>
 <body>
 <h2>Embedded script tag</h2>
@@ -116,10 +117,14 @@
   Show
 </button>
 
-
+<H1>Hello World 1</H1>
+<H1 id="hello">Hello World 2</H1>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="index.js"></script>
+<script>
+  $("H1#hello").remove()
+</script>
 </body>
 
 </html>
