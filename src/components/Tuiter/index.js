@@ -3,7 +3,6 @@ import {Link} from "react-router-dom";
 import NavigationSidebar from "./NavigationSidebar/NavigationSidebar";
 import WhoToFollowList from "./WhoToFollow/WhoToFollowList";
 import ExploreComponent from "./Explore/ExploreComponent";
-import './explore.css';
 
 const Index = () => {
   return (
