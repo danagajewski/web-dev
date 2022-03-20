@@ -5,7 +5,7 @@ import React from "react";
 const TweetBlock = () => {
   return (
       <>
-        { tweets.map(tweet => {return (<Tweet tweet={tweet}/>);}) }
+        { tweets.map(tweet => {return (<Tweet tweet={tweet} key={tweet.account}/>);}) }
       </>
   );
 }

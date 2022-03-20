@@ -7,7 +7,7 @@ const FollowList = () => {
     <>
       {follows.map(follow => {
           return(
-              <Follow follow={follow}/>
+              <Follow follow={follow} key={follow.name}/>
           );
         })}
     </>);

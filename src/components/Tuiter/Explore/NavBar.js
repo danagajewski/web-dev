@@ -5,7 +5,7 @@ import React from 'react';
 const NavBar = () => {
   return(
         <ul className="nav nav-tabs">
-          {tabs.map(tab => {return(<NavBarTab tab={tab}/>);})}
+          {tabs.map(tab => {return(<NavBarTab tab={tab} key={tab.content}/>);})}
         </ul>
     );
 }
