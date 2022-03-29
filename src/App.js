@@ -15,13 +15,13 @@ function App() {
         <div className="container">
           <Routes>
             <Route path="/">
-              <Route path="/hello"
+              <Route path="hello"
                      exact={true}
                      element={<HelloWorld/>}/>
-              <Route path="/labs"
+              <Route path="labs"
                      exact={true}
                      element={<Labs/>}/>
-              <Route path='/nonreact'
+              <Route path='nonreact'
                      exact={true}
                      element={<NonReact/>}/>
               <Route path="tuiter"
