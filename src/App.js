@@ -24,7 +24,7 @@ function App() {
               <Route path='nonreact'
                      exact={true}
                      element={<NonReact/>}/>
-              <Route path="tuiter"
+              <Route path="tuiter/"
                      element={<Index/>}>
                 <Route index
                        element={<HomeScreen/>}/>
