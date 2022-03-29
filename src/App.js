@@ -28,9 +28,9 @@ function App() {
                      element={<Index/>}>
                 <Route index
                        element={<HomeScreen/>}/>
-                <Route path="explore"
+                <Route path="/explore"
                        element={<ExploreComponent/>}/>
-                <Route path="notifications"
+                <Route path="/notifications"
                        element={<NotificationsScreen/>}/>
               </Route>
             </Route>
