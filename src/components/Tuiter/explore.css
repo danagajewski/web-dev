@@ -25,6 +25,10 @@ label.wd-full-width {
     padding-bottom: 0;
 }
 
+.wd-tuit-block {
+    border-radius: 10px;
+}
+
 img.wd-whole-width{
     width: 100%;
 }
@@ -41,9 +45,20 @@ img.wd-whole-width{
     color: rgb(110, 118, 125);
     margin-bottom: 0;
 }
-.wd-content {
+.wd-content-main  {
     margin-bottom: 0;
     font-weight: bold;
+}
+
+.wd-rounded-edges {
+    padding: 0;
+    border-radius: 20px;
+    width: 100%;
+    margin-left: 12px;
+}
+
+.wd-content {
+    margin-bottom: 0;
 }
 p.wd-content-header-author {
     font-size: 13px;
@@ -76,6 +91,12 @@ img.wd-round-image {
     height: 50px;
 }
 
+.wd-margin-right {
+    padding: 0;
+    margin-right: 2px;
+}
+
+
 i.wd-center-cog {
     position: relative;
     top: 4px;
@@ -100,7 +121,6 @@ span.wd-stack-sizing {
 }
 
 .wd-middle {
-    border-radius: 0;
     border-bottom-color: rgb(80, 80, 80);
 }
 
@@ -111,4 +131,16 @@ span.wd-stack-sizing {
 
 i.wd-search-mag {
     color: rgb(150, 150, 150);
+}
+
+.wd-whats-happening {
+    width: 100%;
+    background: transparent;
+    border-width: 0;
+    border-bottom: solid lightgrey;
+    color: lightgrey;
+}
+
+.wd-tuit-button {
+    width: 160px;
 }

@@ -1,14 +1,16 @@
-import React from 'react'
-import FollowList from "./FollowList.js"
+import FollowList
+  from "./FollowList";
 
+import {useSelector} from "react-redux";
 const WhoToFollowList = () => {
-  return (
+  const who = useSelector((state) => state.who);
+  return(
       <div className="container m-0 p-0">
         <ul className="list-group">
           <li className="list-group-item"><p className="wd-content">Who to Follow</p></li>
-          { FollowList() }
+          { FollowList(who) }
         </ul>
       </div>
-    );
-}
+  );
+};
 export default WhoToFollowList;

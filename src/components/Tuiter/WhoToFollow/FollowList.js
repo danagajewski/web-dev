@@ -1,4 +1,4 @@
-import follows from "./Follows.json";
+import follows from "../data/Follows.json";
 import Follow from "./Follow.js";
 import React from "react";
 

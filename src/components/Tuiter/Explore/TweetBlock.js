@@ -4,9 +4,9 @@ import React from "react";
 
 const TweetBlock = () => {
   return (
-      <>
+      <div className="mt-1 mb-3">
         { tweets.map(tweet => {return (<Tweet tweet={tweet} key={tweet.account}/>);}) }
-      </>
+      </div>
   );
 }
 

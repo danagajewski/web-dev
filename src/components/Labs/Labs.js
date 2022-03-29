@@ -5,6 +5,7 @@ import ConditionalOutput from "./ConditionalOutput/index";
 import TodoList from "./Todo/TodoList"
 import {Link} from "react-router-dom";
 import NonReact from "../NonReact";
+import ReduxExamples from "./redux-examples";
 const Labs = () => {
   return(
       <div>
@@ -15,6 +16,7 @@ const Labs = () => {
           Hello
         </Link>
         <h1>Labs</h1>
+        <ReduxExamples/>
         <Styles/>
         <Classes/>
         <ConditionalOutput/>
