@@ -1,6 +1,6 @@
 import {useDispatch} from "react-redux";
 import React from "react";
-import {deleteTuit, updateTuit} from "../actions/tuit-actions";
+import {updateTuit} from "../actions/tuit-actions";
 const TuitStats = ({
   tuit = {
     "_id": "123",

@@ -3,14 +3,14 @@ import Tweet
 import React, {useEffect} from "react";
 import {useDispatch, useSelector}
   from "react-redux";
-import {findAllTuits, deleteTuit} from "../actions/tuit-actions";
+import {findAllTuits} from "../actions/tuit-actions";
 
 const TuitList = () => {
   const tuits = useSelector(
       state => state.tuits);
   const dispatch = useDispatch();
 
-  useEffect(() => findAllTuits(dispatch), []);
+  useEffect(() => findAllTuits(dispatch));
 
   return (
       <ul className="list-group">
