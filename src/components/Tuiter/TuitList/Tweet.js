@@ -1,6 +1,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import TuitStats from "./tuit-stats";
+import {deleteTuit} from "../actions/tuit-actions";
 
 const Tweet = ({
   tuit = {
@@ -19,7 +20,7 @@ const Tweet = ({
       "video": "unKvMC3Y1kI"
     },
     "logo-image": "https://s3.amazonaws.com/images.berecruited.com/photos/athletes/dashboard/3817216.png?1494963118",
-    "avatar-image": "https://s3.amazonaws.com/images.berecruited.com/photos/athletes/dashboard/3817216.png?1494963118",
+    "avatar_image": "https://s3.amazonaws.com/images.berecruited.com/photos/athletes/dashboard/3817216.png?1494963118",
     "stats": {
       "comments": 123,
       "retuits": 234,
@@ -28,25 +29,22 @@ const Tweet = ({
   }
 }) => {
   const dispatch = useDispatch();
-  const deleteTuit = (tuit) => {
-    dispatch({type: 'delete-tuit', tuit})
-  };
-
 
   return (<div className="card wd-middle">
 
         <div className="row card-body p-1 m-1 ">
           <div className="row">
             <div className="col-2 my-2">
-              <img src={tuit["avatar-image"]} alt={""} className="wd-round-image"/>
+              <img src={tuit.avatar_image} alt={""} className="wd-round-image"/>
             </div>
             <div className="col-10">
               <p className="wd-content-ends"> {tuit.topic}</p>
-              <p className="wd-content-main">{tuit.postedBy.username} {tuit.verified
+              <p className="wd-content-main">{"postedBy" in tuit ? tuit.postedBy.username : "Dana Gajewski"} {tuit.verified
+
                   ? <i className="fa-solid fa-check-circle"/> : ""}<span
-                  className="wd-content-ends"> - {tuit.time} <i onClick={() =>
-                  deleteTuit(tuit)} className="fas fa-remove fa-2x
-                  fa-pull-right"/></span></p>
+                  className="wd-content-ends"> - {tuit.time}
+                <i className="fas fa-remove float-end" onClick={() => deleteTuit(dispatch, tuit)}/>
+                </span></p>
               <p className="wd-content">{tuit.tuit}</p>
               {tuit.hasOwnProperty("attachments") && "image"
               in tuit.attachments ?
