@@ -41,7 +41,7 @@ const Tweet = ({
               <p className="wd-content-ends"> {tuit.topic}</p>
               <p className="wd-content-main">{"postedBy" in tuit ? tuit.postedBy.username : "Dana Gajewski"} {tuit.verified
                   ? <i className="fa-solid fa-check-circle"/> : ""} <span className="wd-handle">@{tuit.handle}</span> <span
-                  className="wd-content-ends"> - {tuit.time}
+                  className="wd-handle"> - {tuit.time}
                 <i className="fas fa-remove float-end" onClick={() => deleteTuit(dispatch, tuit)}/>
                 </span></p>
               <p className="wd-content">{tuit.tuit}</p>
