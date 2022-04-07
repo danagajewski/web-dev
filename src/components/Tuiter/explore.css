@@ -129,6 +129,11 @@ span.wd-stack-sizing {
     border-top-right-radius: 0;
 }
 
+.wd-handle{
+    font-weight: normal;
+    color: rgb(110, 118, 125);
+}
+
 i.wd-search-mag {
     color: rgb(150, 150, 150);
 }
