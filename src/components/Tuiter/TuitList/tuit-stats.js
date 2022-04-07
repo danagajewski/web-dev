@@ -1,6 +1,7 @@
 import {useDispatch} from "react-redux";
 import React from "react";
 import {updateTuit} from "../actions/tuit-actions";
+
 const TuitStats = ({
   tuit = {
     "_id": "123",
@@ -30,21 +31,35 @@ const TuitStats = ({
 
   return (
       <div className="d-flex justify-content-around">
-        <span><i className="fa-solid fa-comment"/> {tuit.comments && tuit.comments}</span>
-        <span><i className="fa-solid fa-retweet"/> {tuit.retuits && tuit.retuits}</span>
-          <span onClick={() => updateTuit(dispatch, {
-            ...tuit,
-            likes: tuit.likes + 1
-          })}>
+        <span><i className="fa-solid fa-comment"/> {tuit.comments
+            && tuit.comments}</span>
+        <span><i className="fa-solid fa-retweet"/> {tuit.retuits
+            && tuit.retuits}</span>
+        <span onClick={() => updateTuit(dispatch, {
+          ...tuit,
+          likes: tuit.likes + 1
+        })}>
           {tuit.liked &&
               <i className="fas fa-heart me-1"
                  style={{color: 'red'}}/>}
-            {!tuit.liked &&
-                <i className="far fa-heart me-1"/>}
-            {tuit.likes !== 0 && tuit.likes}
+          {!tuit.liked &&
+              <i className="far fa-heart me-1"/>}
+          {tuit.likes !== 0 && tuit.likes}
 
           </span>
-          <span><i className="fa-solid fa-arrow-up-right-from-square"/></span>
+        <span onClick={() => updateTuit(dispatch, {
+          ...tuit,
+          dislikes: tuit.dislikes + 1
+        })}>
+          {tuit.liked &&
+              <i className="far fa-heart-broken me-1"
+                 style={{color: 'red'}}/>}
+          {!tuit.liked &&
+              <i className="fas fa-heart-broken me-1"/>}
+          {tuit.dislikes !== 0 && tuit.dislikes}
+
+          </span>
+        <span><i className="fa-solid fa-arrow-up-right-from-square"/></span>
       </div>
   );
 }
